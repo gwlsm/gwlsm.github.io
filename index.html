@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // iOS 감지
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/kr/app/실감형콘텐츠/id1497268569";
+            }
+            // Android 감지
+            else if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.keris.contarvr";
+            }
+            // 다른 OS의 경우 (옵션)
+            else {
+                alert("지원되지 않는 운영체제입니다.");
+            }
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting to the appropriate store...</p>
+</body>
+</html>
