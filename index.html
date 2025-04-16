@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="77f198ba-be69-4b3a-935a-84723755b8af"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-            // iOS 감지
-            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                window.location.href = "https://apps.apple.com/kr/app/실감형콘텐츠/id1497268569";
-            }
-            // Android 감지
-            else if (/android/i.test(userAgent)) {
-                window.location.href = "https://play.google.com/store/apps/details?id=com.keris.contarvr";
-            }
-            // 기타 OS
-            else {
-                alert("지원되지 않는 운영체제입니다.");
-            }
-        });
-    </script>
+    <title>Welcome!</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            font-size: 48px;
+            color: #2c3e50;
+        }
+        p {
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to the appropriate store...</p>
+    <h1>Welcome!</h1>
+    <p>This site is hosting on github and managed by yijn10.xyz.</p>
 </body>
 </html>
